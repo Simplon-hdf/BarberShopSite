@@ -1,16 +1,20 @@
 <html lang="fr">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Acceuil</title>
 </head>
 
-<body>
+<body class="bg-gray-600 font-fa">
     <header>
-        <figure>
-            <img src="" alt="logoBarberShop">
-        </figure>
-        <nav>
+        
+        <nav class="flex flex-row text-white justify-around sticky">
+            <figure>
+                <img src="./res/prototypelogo.png" alt="logoBarberShop" class="w-20">
+            </figure>
             <a href="index.html">Accueil</a>
             <a href="./pages/services.html">Services</a>
             <a href="./pages/reservation.html">Reservation</a>
@@ -19,10 +23,11 @@
             <a href="./pages/blog.html">Blog</a>
             <a href="./pages/shop.html">Shop</a>
             <a href="./pages/contact.html">Contact</a>
+            <label for="site-search">Barre de recherche:</label>
+            <input type="search" id="site-search" name="search" />
+            <button>Rechercher</button>
         </nav>
-        <label for="site-search">Barre de recherche:</label>
-        <input type="search" id="site-search" name="q" />
-        <button>Rechercher</button>
+
     </header>
 
     <main>
