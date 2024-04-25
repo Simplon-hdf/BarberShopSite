@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="shop.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                
+              },
+              fontFamily: {
+               
+              },
+              fontsize
+            }
+          }
+        }
+      </script>
+      <!-- <style>
+        .background-section {
+            background-image: url(../assets/shop/shop_background.png);
+        } -->
+      </style>
     <title>Shop</title>
 </head>
 <body>
@@ -11,22 +32,30 @@
 
     </header>
     <main>
-            <section>
-                <h1>
-
+        <section >
+            <section class="background-section bg-center bg-opacity-50 h-72 flex items-center justify-center text-white ">
+                <h1 class="grid justify-items-center p-10 text-4xl">
+                Shop
                 </h1>
-                <section>
-                    <figure>
-                    
-                    </figure>
-                    <figure>
-
-                    </figure>
-                    <figure>
-                        
-                    </figure>
-                </section>
             </section>
+            <section class="box-content h-128 w-128 p-4 border-4 container mx-auto mt-5">
+                <figure class="box-content h-48 w-32">
+                    <img src="../assets/shop/barber_razor.png" alt="Classic_barber_razor">
+                    <figcaption class="grid justify-items-center">Barber razor</figcaption>
+                </figure>
+                    
+                <figure class="box-content h-48 w-32">
+                    <img src="../assets/shop/hair_thinning_scissors.png" alt="">
+                    <figcaption class="grid justify-items-center">Hair thinning scissors</figcaption>
+                </figure>
+                
+                <figure class="box-content h-48 w-32">
+                    <img src="../assets/shop/microfiber_towels.png" alt="">
+                    <figcaption class="grid justify-items-center">Microfiber towels</figcaption>
+                </figure>
+                <figcaption></figcaption>
+            </section>
+        </section>
     </main>
     <footer>
 
