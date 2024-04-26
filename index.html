@@ -8,12 +8,13 @@
 <body class="m-0 p-0  bg-black">
     <header class="sticky top-0">
 
-        <nav class="flex flex-row  justify-between items-center bg-black text-white">
-            <figure>
-                <img src="" alt="logoBarberShop" class="items-start">
-            </figure>
-            <ul class="items-center">
-                <li><a href="index.html">Accueil</a>
+        <header>
+            <nav class="grid text-white fixed z-10 grid-cols-12 p-5 ">
+                <figure>
+                    <img src="./res/prototypelogo.png" alt="logoBarberShop" class="w-20">
+                </figure>
+            
+                <a href="index.html">Accueil</a>
                 <a href="./pages/services.html">Services</a>
                 <a href="./pages/reservation.html">Reservation</a>
                 <a href="./pages/gallery.html">Galerie</a>
@@ -22,12 +23,11 @@
                 <a href="./pages/shop.html">Shop</a>
                 <a href="./pages/contact.html">Contact</a>
                 <label for="site-search">Barre de recherche:</label>
-                <input type="text" id="site-search" name="search" class="caret-black placeholder-gray-600" />
-                <button>Rechercher</button></li>
-            </ul>
-        </nav>
-    </header>
-
+                <input class="" type="search" id="site-search" name="search" />
+                <button>Rechercher</button>
+            </nav>
+    
+        </header>
     <main>
         <section class="bg-[url('./assets/beard.jpg')] text-2xl h-screen bg-left-top text-white flex flex-col items-center justify-center bg-cover">
             <h1 class="text-5xl text-amber-600">L'Hachemi</h1>
@@ -36,26 +36,26 @@
             <a href="./pages/reservation.html">Prendre une réservation</a>
         </section>
 
-        <section>
+        <section class="bg-white">
             <h2>Présentation</h2>
             <p></p>
         </section>
 
         <section class="">
+            <p class="">
             <h2>Services Premium</h2>
-            <p>
             <figure>
                 <img src="./assets/lame-rasoir.png" alt="razorblade" class="size-28">
             </figure>
             </p>
 
-            <p>
+            <p class="">
             <figure>
                 <img src="./assets/ciseaux.png" alt="cisors" class="size-24">
             </figure>
             </p>
 
-            <p>
+            <p class="">
             <figure>
                 <img src="./assets/rasoir.png" alt="razor" class="size-24">
             </figure>
