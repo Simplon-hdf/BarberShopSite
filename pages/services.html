@@ -1,16 +1,19 @@
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./pages/style/header.css">
     <title>Services</title>
 </head>
 
-<body>
+<body class="bg-black text-white">
     <header>
-        <figure>
-            <img src="" alt="logoBarberShop">
-        </figure>
-        <nav>
+        <nav class="grid text-white fixed z-10 grid-cols-12 p-5 ">
+            <figure>
+                <img src="./res/prototypelogo.png" alt="logoBarberShop" class="w-20">
+            </figure>
+        
             <a href="index.html">Accueil</a>
             <a href="./pages/services.html">Services</a>
             <a href="./pages/reservation.html">Reservation</a>
@@ -19,35 +22,49 @@
             <a href="./pages/blog.html">Blog</a>
             <a href="./pages/shop.html">Shop</a>
             <a href="./pages/contact.html">Contact</a>
+            <label for="site-search">Barre de recherche:</label>
+            <input class="" type="search" id="site-search" name="search" >
+            <button>Rechercher</button>
         </nav>
-        <label for="site-search">Barre de recherche:</label>
-        <input type="search" id="site-search" name="q" />
-        <button>Rechercher</button>
-    </header>
 
-    <main>
-        <section>
-            <h1>Services</h1>
-            <p></p>
-        </section>
-        <section>
+        </header>
+
+    <section class="bg-[url('../assets/services/services.jpg')] bg-no-repeat bg-cover h-72 flex justify-center flex-col items-center ">
+        <h1 class="text-amber-600">Services</h1>
+    </section>
+    <main class="grid justify-evenly">
+        <section class="flex justify-evenly w-screen">
+
+            <figure>
+                <img src="../assets/services/barbercare.png" alt="barbe" class="mr-1/2">
+            </figure>
+        <span>
             <h2>Soins Barbe</h2>
-            <figure>
-                <img src="" alt="services-qualite">
-            </figure>
-            <p></p>
+            <p> Soins complet de la barbe avec des produits et des outils de très haute qualités</p>
+        </span>
         </section>
-        <section>
+
+        <section class="flex justify-center w-screen">
+            <span>
             <h2>Soins cheveux</h2>
+            <p>soins complet de les cheveux avec les meilleurs 
+                produits et outils spécifique à chaque chevelure
+            </p>
+        </span>
             <figure>
-                <img src="" alt="produit-qualite">
+                <img src="../assets/services/haircare.jpg" alt="cheveux" class=" ml-1/2">
             </figure>
         </section>
-        <section>
-            <h2>Soins Complets</h2>
+
+        <section class="flex justify-evenly text-wrap w-screen">
+
             <figure>
-                <img src="" alt="">
+                <img src="../assets/picturezone5.png" alt="total" class="mr-1/2 h-72">
             </figure>
+            <span>
+            <h2>Soins Complets</h2>
+            <p> Un services tout-en-un avec soins de la barbe et des cheveux.</p>
+            </span>
         </section>
     </main>
 </body>
