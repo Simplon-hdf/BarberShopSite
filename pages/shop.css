@@ -1,13 +1,4 @@
-header nav {
-    background-size:cover ;
-    background-position: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(0, 0, 0, 0.329));
-}
-
-header nav a{
-    margin-right: 30px;
-    margin-left: 60px;
-}
+@import "./style/header.css";
 
 
 .background-section {
