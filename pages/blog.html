@@ -24,7 +24,7 @@
 </head>
 <body>
     <header>
-        <nav class="grid text-white fixed z-10 grid-cols-12 p-5 ">
+        <nav class="grid text-white fixed z-10 grid-cols-12 p-5">
             <figure>
                 <img src="./res/prototypelogo.png" alt="logoBarberShop" class="w-20">
             </figure>
@@ -37,8 +37,8 @@
             <a href="./pages/blog.html">Blog</a>
             <a href="./pages/shop.html">Shop</a>
             <a href="./pages/contact.html">Contact</a>
-            <label for="site-search">Barre de recherche:</label>
-            <input class="" type="search" id="site-search" name="search" />
+            <label for="site-search"></label>
+            <input class="rounded-full" type="search" id="site-search" name="search"/>
             <button>Rechercher</button>
         </nav>
     </header>
@@ -46,37 +46,56 @@
         <h1 class="text-4xl text-amber-600 ">Blog</h1>
         <p class="font-serif text-xl">Découvrez les derniers articles du blog</p>
     </section>
-    <section class="bg-gray-200">
-        <h4 class="text-2xl text-amber-600 text-center">Salon</h4>
-        <figure><img src="../assets/salon_cuir.png" alt="logoBarberShop" class="block mx-auto"></figure>
-        <p class="text-center">Un environnement à l'anglaise pour les clients avec un confort luxueux.</p>
-        <h3 class="text-2xl text-amber-600 text-end">Archives</h3>
-        <p class="text-end">Avril 2024</p>
-        <p class="text-end">Mars 2024</p>
-        <p class="text-end">Février 2024</p>
-    </section>
-    <section class="bg-black">
-        <h4 class="text-2xl text-amber-600 text-center">Barbier</h4>
-        <figure><img src="../assets/taillage.png" alt="logoBarberShop" class="block mx-auto"></figure>
-        <p class="text-center">Techniques de taillage à la pointe.</p>        
-        <h3 class="text-2xl text-amber-600 text-end">Catégories</h3>
-        <p class="text-end text-white">Barbier</p>
-        <p class="text-end text-white">Salon</p>
-    </section>
-    <section class="bg-gray-200">
-        <figure><img src="../assets/bel_homme.jpg" alt="logoBarberShop" class="block mx-auto"></figure>
-        <p class="text-center">Précision chirurgicale de nos barbiers.</p>        
-        <h3 class="text-2xl text-amber-600 text-end">Articles récent</h3>
-        <p class="text-end">Un environnement...</p>
-        <p class="text-end">Techniques...</p>
-        <p class="text-end">Précision...</p>
-        <p class="text-end">Mousse...</p>        
-        <figure><img src="../assets/mousse.jpg" alt="logoBarberShop" class="block mx-auto object-contain h-auto w-full"></figure>
-        <p class="text-center">Une mousse hydratante pour la peau et un confort pour le taillage de la barbe.</p>
-    </section>
-    <footer class="bg-black text-white">
+    <section class="grid grid-cols-3">
+        <section class="grid row-start-1 col-start-1 row-end-4 col-end-2 bg-black">
+
+        </section>
+        <main class="grid row-start-1 col-start-2 row-end-4 col-end-3 bg-black py-2">            
+            <section class="border border-amber-600">
+                <h4 class="text-2xl text-amber-600 text-center mt-1">Salon</h4>
+                <figure><img src="../assets/salon_cuir.png" alt="logoBarberShop" class="block mx-auto mt-1 mb-1"></figure>
+                <p class="text-center text-white pb-1">Un environnement à l'anglaise pour les clients avec un confort luxueux.</p>
+            </section>
+            <section class="border border-amber-600 mt-2">
+                <h4 class="text-2xl text-amber-600 text-center mt-1">Barbier</h4>
+                <figure><img src="../assets/taillage.png" alt="logoBarberShop" class="block mx-auto mt-1 mb-1"></figure>
+                <p class="text-center text-white pb-1">Techniques de taillage à la pointe.</p>        
+            </section>
+            <section class="border border-amber-600 my-2">
+                <figure><img src="../assets/bel_homme.jpg" alt="logoBarberShop" class="block mx-auto pt-2 mb-1"></figure>
+                <p class="text-center text-white pb-1">Précision chirurgicale de nos barbiers.</p>        
+            </section>
+            <section class="border border-amber-600 pb-2">         
+                <figure><img src="../assets/mousse.jpg" alt="logoBarberShop" class="block mx-auto object-contain h-auto w-full pt-2 mb-1"></figure>
+                <p class="text-center text-white pb-1">Une mousse hydratante pour la peau et un confort pour le taillage de la barbe.</p>
+            </section>
+        </main>
+
+        <aside class="grid row-start-1 col-start-3 row-end-4 col-end-4 bg-black content-evenly">
+            <section class="border border-amber-600 mx-20">
+                <h3 class="text-2xl text-amber-600 text-center py-2 underline ">Archives :</h3>
+                <p class="text-start text-lg text-white pl-1">Avril 2024</p>
+                <p class="text-start text-lg text-white pl-1">Mars 2024</p>
+                <p class="text-start text-lg text-white pl-1">Février 2024</p>
+            </section>
+            <section class="border border-amber-600 mx-20">
+                <h3 class="text-2xl text-amber-600 text-center py-2 underline">Catégories :</h3>
+                <p class="text-start text-white text-lg pl-1">Barbier</p>
+                <p class="text-start text-white text-lg pl-1">Salon</p>
+            </section>
+            <section class="border border-amber-600 mx-20 ">
+                <h3 class="text-2xl text-amber-600 text-center py-2 underline">Articles récent :</h3>
+                <p class="text-start text-lg text-white pl-1">Un environnement...</p>
+                <p class="text-start text-lg text-white pl-1">Techniques...</p>
+                <p class="text-start text-lg text-white pl-1">Précision...</p>
+                <p class="text-start text-lg text-white pl-1">Mousse...</p>
+            </section>            
+        </aside>        
+    </section>    
+    <footer class="bg-white text-black mx-12">
         <p class="text-center">Copyright 2024 Barber Shop. All rights reserved.</p>
         <p class="text-center">Author : Nicolas, Romain, Julien, Florian</p>
+        <a href="#" id="lienRetour" title="Revenir en haut de la page" class="fixed bottom-4 right-4 z-50 bg-amber-600 hover:bg-red-800 text-white py-2 px-4 rounded">^</a>
     </footer>       
 </body>
 </html>
