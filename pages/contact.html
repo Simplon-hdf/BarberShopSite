@@ -25,18 +25,24 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="team.html">L'équipe</a></li>
-                <li><a href="services.html">Services</a></li>               
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="shop.html">Magasin</a></li>
-                <li><a href="gallery.html">Galerie</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="book.html">Réservation</a></li>
-            </ul>
+        <nav class="grid text-white fixed z-10 grid-cols-12 p-5">
+            <figure>
+                <img src="./res/prototypelogo.png" alt="logoBarberShop" class="w-20">
+            </figure>
+            
+                <a href="index.html">Accueil</a>
+                <a href="team.html">L'équipe</a>
+                <a href="services.html">Services</a>              
+                <a href="blog.html">Blog</a>
+                <a href="shop.html">Magasin</a>
+                <a href="gallery.html">Galerie</a>
+                <a href="contact.html">Contact</a>
+                <a href="book.html">Réservation</a>
+                <label for="site-search"></label>
+            <input class="rounded-full border border-amber-600 col-start-10 col-end-12 row-start-1 mb-4" type="search" id="site-search" name="search"/>
+            <button class="col-start-12 col-end-12 row-start-1 mb-4">Rechercher</button>
         </nav>
+            
         <section
             class="bg-[url('../assets/home/beard.jpg')] h-screen text-white flex flex-col items-center justify-center bg-cover">
             <h1 class="text-4xl text-amber-600">Contact</h1>
@@ -47,7 +53,7 @@
     <main>
         <section class="grid grid-cols-5 grid-rows-3 bg-black">
             <section
-                class="grid col-start-2 row-start-1 col-end-5 text-white border border-amber-600 mt-1 ml-16 mr-16 pt-1 pb-1">
+                class="grid col-start-2 row-start-1 col-end-5 text-white border border-amber-600 mt-4 ml-16 mr-16 pt-1 pb-1">
                 <h2 class="text-amber-600 text-center text-2xl underline">Contactez-nous</h2>
                 <p class="text-center mt-2 mb-2">N'ayez pas peur de nous contacter, nous répondrons dans les plus brefs
                     délais.</p>
