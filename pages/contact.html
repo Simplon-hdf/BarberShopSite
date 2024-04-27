@@ -23,41 +23,55 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="team.html">L'équipe</a></li>
-                <li><a href="services.html">Services</a></li>               
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="shop.html">Magasin</a></li>
-                <li><a href="gallery.html">Galerie</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="book.html">Réservation</a></li>
-            </ul>
+        <nav class="grid text-white fixed z-10 grid-cols-12 p-5">
+            <figure>
+                <img src="./res/prototypelogo.png" alt="logoBarberShop" class="w-20">
+            </figure>
+
+            <a href="index.html">Accueil</a>
+            <a href="./pages/services.html">Services</a>
+            <a href="./pages/reservation.html">Reservation</a>
+            <a href="./pages/gallery.html">Galerie</a>
+            <a href="./pages/Team.html">Equipe</a>
+            <a href="./pages/blog.html">Blog</a>
+            <a href="./pages/shop.html">Shop</a>
+            <a href="./pages/contact.html">Contact</a>
+            <label for="site-search"></label>
+            <input class="rounded-full" type="search" id="site-search" name="search"/>
+            <button>Rechercher</button>
         </nav>
+        <section class="bg-[url('../assets/home/beard.jpg')] h-screen text-white flex flex-col items-center justify-center bg-cover">
+            <h1 class="text-4xl text-amber-600">Contact</h1>
+            <p class="font-serif text-xl">Nous contacter pour toute question.</p>
+        </section>
     </header>
     
     <main>
-        <section>
-            <h2>Contactez-nous</h2>
-            <p>N'ayez pas peur de nous contacter, nous répondrons dans les plus brefs délais.</p>
-        </section>
-        <section>
-            <h2>Adresse postale :</h2>
-            <p>Barber Shop</p>
-            <p>13 Rue aux Ours</p>
-            <p>62000, ARRAS</p>
-        </section>
-        <section>
-            <h2>Contact :</h2>
-            <p>03.21.78.88.58</p>
-            <p>07.00.48.08.06</p>
-            <p>bestbarber62@gmail.com</p>
-        </section>
-        <section> 
+    <section class="grid grid-cols-3 grid-rows-3 bg-black">
+                
+            <section class="grid col-start-2 text-white">
+                <h2 class="text-amber-600 text-center text-2xl">Contactez-nous</h2>
+                <p>N'ayez pas peur de nous contacter, nous répondrons dans les plus brefs délais.</p>
+            </section>
+            <section class="grid row-start-3 col-start-1 text-white border border-amber-600">
+                <h2 class="text-2xl text-amber-600 text-center underline">Adresse postale :</h2>
+                <p>Barber Shop</p>
+                <p>13 Rue aux Ours</p>
+                <p>62000, ARRAS</p>
+            </section>
+            <section class="grid row-start-3 col-start-3 text-white border border-amber-600">
+                <h2 class="text-2xl text-amber-600 text-center underline">Contact :</h2>
+                <p>03.21.78.88.58</p>
+                <p>07.00.48.08.06</p>
+                <p>bestbarber62@gmail.com</p>
+            </section>
+        
+    
+        <section class="grid bg-black col-start-2 row-start-4"> 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d649480.6019993802!2d2.3719202!3d50.51494159999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd49412f0b3ae5%3A0xcc614ef2c15b64ee!2sBarber%20So!5e0!3m2!1sen!2sfr!4v1713988909973!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-        </section>
+        </section> 
+    </section>       
     </main>
 </body>
 </html>
