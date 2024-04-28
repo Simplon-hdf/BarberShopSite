@@ -8,53 +8,72 @@
     <title>Shop</title>
 </head>
 <body>
-    <header>
-        <nav class="grid text-white fixed z-10 grid-cols-12 p-5 ">
+    <header class="">
+        <nav class="grid text-white fixed z-10 grid-cols-12 p-5">
             <figure>
                 <img src="./res/prototypelogo.png" alt="logoBarberShop" class="w-20">
             </figure>
-        
-            <a href="../index.html">Accueil</a>
-            <a href="./services.html">Services</a>
-            <a href="./reservation.html">Reservation</a>
-            <a href="./gallery.html">Galerie</a>
-            <a href="./Team.html">Equipe</a>
-            <a href="./blog.html">Blog</a>
-            <a href="./shop.html">Shop</a>
-            <a href="./contact.html">Contact</a>
-            <label for="site-search">Barre de recherche:</label>
-            <input class="" type="search" id="site-search" name="search" />
-            <button>Rechercher</button>
-        </nav>
+            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="../index.html">Accueil</a>
+            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="services.html">Services</a>
+            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="reservation.html">Reservation</a>
+            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="gallery.html">Galerie</a>
+            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="Team.html">Equipe</a>
+            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="blog.html">Blog</a>
+            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="shop.html">Shop</a>
+            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="contact.html">Contact</a>
+            
+            <input class="rounded-full col-span-2 mr-5 ml-20" type="search" id="site-search" name="search"/>
 
+            <button class="hover:text-amber-600 tradition duration-300 ease-in-out">Rechercher</button>
+        </nav>
     </header>
     <main>
-        <section >
+        <section class="">
             <section class="background-section bg-center bg-opacity-50 h-72 flex items-center justify-center text-white ">
-                <h1 class="grid justify-items-center p-10 text-4xl">
+                <h1 class="grid justify-items-center p-10 text-4xl text-amber-600">
                 Shop
                 </h1>
             </section>
-            <section class="box-content h-128 w-128 p-4 border-4 container mx-auto mt-5">
-                <figure class="box-content h-48 w-32">
-                    <img src="../assets/shop/barber_razor.png" alt="Classic_barber_razor">
-                    <figcaption class="grid justify-items-center">Barber razor</figcaption>
-                </figure>
+            <section class="grid grid-cols-8 gap-4">
+                <section class="grid col-span-7 grid-cols-4 box-content h-128 w-15 p-4 border-4 container ml-auto mt-5 justify-items-center">
+                    <figure class="box-content relative group w-80">
+                        <img class="w-full" src="../assets/shop/barber_razor.png" alt="Classic_barber_razor">
+                        <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Classic barber razor</figcaption>
+                    </figure>
+                        
+                    <figure class="box-content relative group w-80">
+                        <img src="../assets/shop/hair_thinning_scissors.png" alt="">
+                        <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Hair thinning scissors</figcaption>
+                    </figure>
                     
-                <figure class="box-content h-48 w-32">
-                    <img src="../assets/shop/hair_thinning_scissors.png" alt="">
-                    <figcaption class="grid justify-items-center">Hair thinning scissors</figcaption>
-                </figure>
-                
-                <figure class="box-content h-48 w-32">
-                    <img src="../assets/shop/microfiber_towels.png" alt="">
-                    <figcaption class="grid justify-items-center">Microfiber towels</figcaption>
-                </figure>
-                <figure class="box-content h-48 w-32">
-                    <img src="../assets/shop/microfiber_towels.png" alt="">
-                    <figcaption class="grid justify-items-center">Microfiber towels</figcaption>
-                </figure>
-            </section>
+                    <figure class="box-content relative group w-80">
+                        <img src="../assets/shop/microfiber_towels.png" alt="">
+                        <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Microfiber towels</figcaption>
+                    </figure>
+                    <figure class="box-content relative group w-80">
+                        <img src="../assets/shop/microfiber_towels.png" alt="">
+                        <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Microfiber towels</figcaption>
+                    </figure>
+                    <figure class="box-content relative group w-80">
+                        <img src="../assets/shop/hair_thinning_scissors.png" alt="">
+                        <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Hair thinning scissors</figcaption>
+                    </figure>
+                    
+                    <figure class="box-content relative group w-80">
+                        <img src="../assets/shop/microfiber_towels.png" alt="">
+                        <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Microfiber towels</figcaption>
+                    </figure>
+                    <figure class="box-content relative group w-80">
+                        <img src="../assets/shop/microfiber_towels.png" alt="">
+                        <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Microfiber towels</figcaption>
+                    </figure>
+                </section>
+                <aside class="grid box-content h-128 w-32 p-4 border-4 container justify-center mt-5">
+                    <label for="filter">filtre</label>
+                    
+                </aside>
+            </section> 
+            
         </section>
     </main>
     <footer>
