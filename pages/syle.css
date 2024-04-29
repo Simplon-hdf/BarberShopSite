@@ -1,20 +1,16 @@
 .background {
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  margin: ;
+  margin: 0;
   padding: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.322)),
-    url("/res/homepage1-1.jpg");
+    url("../res/homepage1-1.jpg");
   width: 100%;
   height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 body {
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
 
   color: white;
