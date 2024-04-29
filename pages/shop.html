@@ -8,23 +8,23 @@
     <title>Shop</title>
 </head>
 <body>
-    <header class="">
-        <nav class="grid text-white fixed z-10 grid-cols-12 p-5">
-            <figure>
-                <img src="./res/prototypelogo.png" alt="logoBarberShop" class="w-20">
+    <header class="relative">
+        <nav class="grid text-white fixed z-10 grid-cols-11 p-5">
+            <figure class="absolute ">
+                <img src="../assets/logo-barber-crest-gold-barber-shop-t-shirt-homme.jpg" alt="logoBarberShop" class="w-16">
             </figure>
             <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="../index.html">Accueil</a>
-            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="services.html">Services</a>
-            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="reservation.html">Reservation</a>
-            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="gallery.html">Galerie</a>
-            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="Team.html">Equipe</a>
-            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="blog.html">Blog</a>
-            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="shop.html">Shop</a>
-            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="contact.html">Contact</a>
+            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="./services.html">Services</a>
+            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="./reservation.html">Reservation</a>
+            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="./gallery.html">Galerie</a>
+            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="./Team.html">Equipe</a>
+            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="./blog.html">Blog</a>
+            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="./shop.html">Shop</a>
+            <a class="hover:text-amber-600 tradition duration-300 ease-in-out" href="./contact.html">Contact</a>
             
-            <input class="rounded-full col-span-2 mr-5 ml-20" type="search" id="site-search" name="search"/>
+            <input class="rounded-full text-black border border-amber-600 col-span-2 mr-5 ml-20 h-8" type="search" id="site-search" name="search"/>
 
-            <button class="hover:text-amber-600 tradition duration-300 ease-in-out">Rechercher</button>
+            <button class="hover:text-amber-600 tradition duration-300 ease-in-out h-8">Rechercher</button>
         </nav>
     </header>
     <main>
@@ -34,46 +34,84 @@
                 Shop
                 </h1>
             </section>
-            <section class="grid grid-cols-8 gap-4">
-                <section class="grid col-span-7 grid-cols-4 box-content h-128 w-15 p-4 border-4 container ml-auto mt-5 justify-items-center">
-                    <figure class="box-content relative group w-80">
-                        <img class="w-full" src="../assets/shop/barber_razor.png" alt="Classic_barber_razor">
-                        <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Classic barber razor</figcaption>
-                    </figure>
+            <div>
+
+                <div class="flex gap-4">
+                    
+                    <div class="grid relative col-span-7 grid-rows-3 grid-cols-4 w-full box-content gap-2 h-128 p-4 border-4 container ml-2 mt-5 pt-8 w-3/4 justify-items-center md:grid-cols-6">
+                        <form class="absolute right-16" action="#">
+                            <select name="filtre" id="filter">
+                                <option value="filtre" selected>Filtre</option>
+                                <option value="scissors">Ciseaux</option>
+                                <option value="towels">Serviettes</option>
+                                <option value="razor">Rasoir</option>
+                            </select>
+                        </form>
+                        <p class="absolute left-16">Résultats visible</p>
+                        <div class="absolute bottom-0 ">
+                        <button class="mr-2 p-2 hover:underline">1</button>
+                        <button class="mr-2 p-2 hover:underline">2</button>
+                        </div>
+                        <figure class="box-content relative group w-48">
+                            <img class="w-64" src="../assets/shop/barber_razor.png" alt="Classic_barber_razor">
+                            <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Lame de barbier classique</figcaption>
+                        </figure>
+                            
+                        <figure class="box-content relative group w-48">
+                            <img class="w-64" src="../assets/shop/hair_thinning_scissors.png" alt="">
+                            <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Ciseaux pour cheveux clairsemés</figcaption>
+                        </figure>
                         
-                    <figure class="box-content relative group w-80">
-                        <img src="../assets/shop/hair_thinning_scissors.png" alt="">
-                        <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Hair thinning scissors</figcaption>
-                    </figure>
-                    
-                    <figure class="box-content relative group w-80">
-                        <img src="../assets/shop/microfiber_towels.png" alt="">
-                        <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Microfiber towels</figcaption>
-                    </figure>
-                    <figure class="box-content relative group w-80">
-                        <img src="../assets/shop/microfiber_towels.png" alt="">
-                        <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Microfiber towels</figcaption>
-                    </figure>
-                    <figure class="box-content relative group w-80">
-                        <img src="../assets/shop/hair_thinning_scissors.png" alt="">
-                        <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Hair thinning scissors</figcaption>
-                    </figure>
-                    
-                    <figure class="box-content relative group w-80">
-                        <img src="../assets/shop/microfiber_towels.png" alt="">
-                        <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Microfiber towels</figcaption>
-                    </figure>
-                    <figure class="box-content relative group w-80">
-                        <img src="../assets/shop/microfiber_towels.png" alt="">
-                        <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Microfiber towels</figcaption>
-                    </figure>
-                </section>
-                <aside class="grid box-content h-128 w-32 p-4 border-4 container justify-center mt-5">
-                    <label for="filter">filtre</label>
-                    
-                </aside>
-            </section> 
-            
+                        <figure class="box-content relative group w-48">
+                            <img class="w-64" src="../assets/shop/microfiber_towels.png" alt="">
+                            <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Serviettes</figcaption>
+                        </figure>
+                        <figure class="box-content relative group w-48">
+                            <img class="w-64" src="../assets/shop/barber_blade.png" alt="">
+                            <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Lame de rasoir</figcaption>
+                        </figure>
+                        <figure class="box-content relative group w-48">
+                            <img class="w-64" src="../assets/shop/beard_trimmer.png" alt="">
+                            <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Tondeuse à barbe</figcaption>
+                        </figure>
+                        
+                        <figure class="box-content relative group w-48">
+                            <img class="w-64" src="../assets/shop/beard_brush.png" alt="">
+                            <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Brosse à barbe</figcaption>
+                        </figure>
+                        <figure class="box-content relative group w-48">
+                            <img class="w-64" src="../assets/shop/Hairbrush.png" alt="">
+                            <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Peigne à cheveux</figcaption>
+                        </figure>
+                        <figure class="box-content relative group w-48">
+                            <img class="w-64" src="../assets/shop/shaving_brush.png" alt="">
+                            <figcaption class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-white text-4xl duration-300">Blaireau de rasage</figcaption>
+                        </figure>
+                    </div>
+                    <aside class="grid box-content h-128 w-664 p-2 border-4 ml-2 w-1/4 container justify-center mt-5">
+                        <form action="#">
+                            <input class="mr-5 w-full border-b-2 mt-2 " type="search" name="search_product" id="search_product" placeholder="Recherche de produit"/>
+                        </form>
+                        <section>
+                            <h3 class="m-0 text-xl">Meilleurs Vente :</h3>
+                            <figure class="grid grid-cols-2 grid-rows-2">
+                                <img class="w-32 m-2" src="../assets/shop/barber_razor.png" alt="Classic_barber_razor">
+                                <img class="w-32 m-2" src="../assets/shop/hair_thinning_scissors.png" alt="">
+                                <img class="w-32 m-2" src="../assets/shop/microfiber_towels.png" alt="">
+                            </figure>
+                        </section>
+                        <section>
+                            <h3 class="m-0 text-xl">Tag populaire :</h3>
+                        </section>
+                        <section>
+                            <h3 class="text-xl">Panier :</h3>
+                            <p class="mt-5 ">aucun objet dans le panier</p>
+                        </section>
+                        
+                        
+                    </aside>
+                </div> 
+            </div>
         </section>
     </main>
     <footer>
